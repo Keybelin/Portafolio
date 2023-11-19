@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #007BFF;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        header h1 {
+            color: #007BFF;
+            margin: 10px 0;
+        }
+
+        nav {
+            background-color: #007BFF;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            padding: 30px 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills div {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .skills h3 {
+            color: #007BFF;
+            margin-top: 0;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .rating label {
+            margin-right: 10px;
+        }
+
+        .rating input {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .rating span {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+         /* Nuevo estilo para el botón de descarga */
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="tu_foto.jpg">
+        <h1>Keybelin Montero Castro</h1>
+        <p>Estudiante de la carrera de Informática Empresarial</p>
+    </header>
+
+    <nav>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#educacion">Educación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li>
+                <p>2021 - En progreso</p>
+                <p> Capaz de crear soluciones tecnológicas eficientes para optimizar procesos empresariales y mejorar resultados.</p>
+                
+                <h4>Conicimiento en el lenjuaje de programacion Java </h4>
+                <h4>Creación de Bases de Datos</h4>
+                <h4>Front End</h4>
+               
+                <div class="rating">
+                    <label for="habilidad1">Manejo del lenguaje de programación Java</label>
+                    <input type="range" id="habilidad1" name="habilidad1" min="0" max="10" value="9" step="1">
+                    <span>9/10</span>
+                </div>
+                
+                <div class="rating">
+                    <label for="habilidad2">Creacion de Bases de Datos SQL SERVER y XAMPP </label>
+                    <input type="range" id="habilidad2" name="habilidad2" min="0" max="10" value="8" step="1">
+                    <span>8/10</span>
+                </div>
+                
+                <div class="rating">
+                    <label for="habilidad3">Sitios Web HTML </label>
+                    <input type="range" id="habilida3" name="habilidad3" min="0" max="9" value="8" step="1">
+                    <span>9/10</span>
+                </div>
+                
+                
+            </li>
+            <!-- Agregar más elementos según sea necesario -->
+        </ul>
+    </section>
+
+    <section id="educacion">
+        <h2>Educación</h2>
+        <ul>
+            <li>
+                <h4>Educación Primaria</h4>
+                <p>2011 - 2016</p>
+                <p>Escuela María Vargas Rodríguez | Ciruelas, Alajuela </p>
+            </li>
+            
+             <li>
+                <h4>Educación Secundaria</h4>
+                <p>2017 - 2021</p>
+                <p>Colegio Redentorista San Alfonso | Brásil, Alajuela </p>
+            </li>
+            
+            <li>
+                <h4>Bachillerato en Informática Empresarial</h4>
+                <p>2022 - En curso</p>
+                <p>Universidad de Costa Rica | Cocal, Puntarenas </p>
+            </li>
+            
+           
+        </ul>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <div>
+                
+                <ul>
+                    <li>Autodidacta.</li>
+                    <li>Líder por naturaleza.</li>
+                    <li>Capacidad de trabajar en equipo.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Español - Nativo</li>
+                    <li>Inglés - B2</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Videojuego de Ajedez.</p>
+            </div>
+            <div class="project">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Videojuego con implementacion de hilos.</p>
+            </div>
+            <div class="project">
+                <img src="proyecto3.jpg" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Pagina web HTML.</p>
+            </div>
+            <div class="project">
+                <img src="proyecto4.jpg" alt="Proyecto 4">
+                <h3>Proyecto 4</h3>
+                <p>Modelado de la base de datos del videojuego Brawl Stars.</p>
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Correo electrónico: keybelinmc22@gmail.com</p>
+        <p>Teléfono: 6368-9922</p>
+        
+        <body>
+
+
+</body>
+        
+         <h3>Escanea para visitar la página</h3>
+        <img src="QRFace.png" >
+    </section>
+
+    <footer>
+        <p>&copy; 2023 - Tarea de Sistemas Opertivos - Keybelin</p>
+    </footer>
+
+</body>
+</html>
